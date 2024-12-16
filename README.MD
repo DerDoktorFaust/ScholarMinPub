@@ -68,7 +68,7 @@ To add an image you found on the internet, you first need to download the image 
 
 #### Create the Image Description File
 
-- Navigate to the directory /media_files/_media_metadata
+- Navigate to the directory ```/media_files/_media_metadata```
 - Press the Add File button at the top left
 - Select "Create New File"
 - Name your file a descriptive name that makes sense based on the image
