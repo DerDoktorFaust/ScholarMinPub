@@ -8,14 +8,6 @@ ScholarMinPub is a fork of the documentary publishing platform MinDoc, which was
 
 ## User Guide
 
----
-layout: default
-title: User Guide
-number: 8
----
-
-# User Guide
-
 ## Establish a Repository with Your Copy of ScholarMinPub In It
 
 The first thing you’ll need to do—to build your website—is to create a copy of our ScholarMinPub template that you can alter to suit your needs and put into something GitHub calls ‘a repository.’ A repository is just a collection of files within a larger project (in this case ScholarMinPub). So in this step you will create a clone copy of the ScholarMinPub files, within a repository you will name as your own.  To create the site, you’ll then be revising these files to reflect your content (adding all the elements of your edition: the source, your commentary, footnotes, etc.) You will revise these files to make your website.  To create your Repository, with your new copy of the ScholarMinPub template in it:
