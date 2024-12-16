@@ -1,0 +1,3 @@
+# ScholarMinPub
+
+Home of ScholarMinPub.
