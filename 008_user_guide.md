@@ -6,23 +6,23 @@ number: 8
 
 # User Guide
 
-## Establish a Repository with Your Copy of MinPub In It
+## Establish a Repository with Your Copy of ScholarMinPub In It
 
-The first thing you’ll need to do—to build your website—is to create a copy of our MinPub template that you can alter to suit your needs and put into something GitHub calls ‘a repository.’ A repository is just a collection of files within a larger project (in this case MinPub). So in this step you will create a clone copy of the MinPub files, within a repository you will name as your own.  To create the site, you’ll then be revising these files to reflect your content (adding all the elements of your edition: the source, your commentary, footnotes, etc.) You will revise these files to make your website.  To create your Repository, with your new copy of the MinPub template in it:
+The first thing you’ll need to do—to build your website—is to create a copy of our ScholarMinPub template that you can alter to suit your needs and put into something GitHub calls ‘a repository.’ A repository is just a collection of files within a larger project (in this case ScholarMinPub). So in this step you will create a clone copy of the ScholarMinPub files, within a repository you will name as your own.  To create the site, you’ll then be revising these files to reflect your content (adding all the elements of your edition: the source, your commentary, footnotes, etc.) You will revise these files to make your website.  To create your Repository, with your new copy of the ScholarMinPub template in it:
 
 - ***Sign in to GitHub*** - If you don’t already have an account, create one. Go to [GitHub](https://github.com) and select “sign up” at the top right corner.
-- ***Go to the MinPub Repository*** - This is where you will find all the MinPub files: [ScholarMinPub GitHub Repository](https://github.com/DerDoktorFaust/ScholarMinPub).
+- ***Go to the ScholarMinPub Repository*** - This is where you will find all the ScholarMinPub files: [ScholarMinPub GitHub Repository](https://github.com/DerDoktorFaust/ScholarMinPub).
 - ***Create Your Own Repository*** - Click on the big green button on the top right of the screen ("Use this Template") It will provide you with two options. Choose ”Create a New Repository.”
-- ***Choose a Name for your Brand New MinPub Project*** - This should be LASTNAME-FIRSTNAME-HIST-CLASSNUMBER
+- ***Choose a Name for your Brand New ScholarMinPub Project*** - This should be LASTNAME-FIRSTNAME-HIST-CLASSNUMBER
 - ***Set the Preferences*** - The default setting is public repository. Do not change this, as you can only deploy a website if the repository is public.
 - ***Click Create Repository***
 
 ## Initial Testing of Your Site
 
-So your new copy of MinPub already can be converted into a website, using GitHub’s tools. It’s just a blank website (for now), since you haven’t added any content. Still, it makes sense to make sure you can deploy your site before you put more work into it. Here’s how.
+So your new copy of ScholarMinPub already can be converted into a website, using GitHub’s tools. It’s just a blank website (for now), since you haven’t added any content. Still, it makes sense to make sure you can deploy your site before you put more work into it. Here’s how.
 
 - ***Go to the Settings Tab and Choose ‘Pages’*** - It’s in the top left bar.
-- ***Set the Site to Deploy from Main Branch*** - Click on the Save button. The "branch” refers to your unique version of the MinPub repository. The main branch is considered the most simple, stable, and deployable branch. By selecting the main branch, all your edits will be merged and displayed on your website.
+- ***Set the Site to Deploy from Main Branch*** - Click on the Save button. The "branch” refers to your unique version of the ScholarMinPub repository. The main branch is considered the most simple, stable, and deployable branch. By selecting the main branch, all your edits will be merged and displayed on your website.
 - ***Reload the Page*** - The link to your website will appear at the top of the same page.  This may take several minutes, so don’t worry if your link isn’t immediately generated.
 - ***Copy and Store Your New URL So You Have It Handy*** - Copy the link, then click on the ‘Code’ page (top left).  Find the ‘About’ section (on the right). Click on the Settings button, which is just to the right of “About” and looks like a gear. Then paste the URL (the website’s address) in the “Website” line to always have it at hand.  
 - ***Set Your Site baseurl***
