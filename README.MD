@@ -55,7 +55,7 @@ To add text content:
 - On the page that opens, add your text
 - Press the green button at the top that says "Commit Changes..."
 
-Leave base titles alone that have the {% raw %} # Title {% endraw %} headings. To add second-level titles, use {% raw %} ## Second-Level Title {% endraw %}.
+Leave base titles alone that have the ```# Title``` headings. To add second-level titles, use ```## Second-Level Title```.
 
 Also, do not change any text at the top of each file, everything that is between the ``` --- ``` symbols.
 
@@ -86,7 +86,6 @@ Copy and paste the following:
 
 ```
 --- 
-
 name: EmperorNapoleon
 media_type: image
 
@@ -98,7 +97,6 @@ source: Wikipedia
 
 _path: /media_files/images/emperornapoleon.jpg 
 layout: media_description
-
 --- 
 ```
 
@@ -110,10 +108,10 @@ Change the information above to match your new image. Remember the "name" you gi
 
 Copy and paste the following to where you want the image to appear in your text file:
 
-{% raw %}
+```
 {% assign media = site.media_metadata | where_exp: "item", "item.name == 'PrussianInfantryHohenfriedberg'" %}
 {% include media.html pages=media %}
-{% endraw %}
+```
 
 Now, change PrussianInfantryHohenfriedberg to the "name" you gave your image in the step above.
 
@@ -130,17 +128,15 @@ Example:
 
 After following the steps above, YouTube gives you the following code:
 
-{% raw %}
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PizUbOsjYm0?si=SukZvyQDpYvHldiR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```
-{% endraw %}
+
 
 Copy only the following:
 
-{% raw %}
 https://www.youtube.com/embed/PizUbOsjYm0?si=SukZvyQDpYvHldiR
-{% endraw %}
+
 
 #### Create Your Video Description File
 
@@ -176,10 +172,12 @@ Change the information above to match your new video. Remember the "name" you gi
 
 Copy and paste the following to where you want the video to appear in your text file:
 
+```
 {% raw %}
 {% assign media = site.media_metadata | where_exp: "item", "item.name == 'RiseOfPrussia'" %}
 {% include media.html pages=media %}
 {% endraw %}
+```
 
 Now, change RiseOfPrussia to the "name" you gave your video in the step above.
 
