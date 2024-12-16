@@ -173,10 +173,8 @@ Change the information above to match your new video. Remember the "name" you gi
 Copy and paste the following to where you want the video to appear in your text file:
 
 ```
-{% raw %}
 {% assign media = site.media_metadata | where_exp: "item", "item.name == 'RiseOfPrussia'" %}
 {% include media.html pages=media %}
-{% endraw %}
 ```
 
 Now, change RiseOfPrussia to the "name" you gave your video in the step above.
@@ -187,7 +185,7 @@ Now, change RiseOfPrussia to the "name" you gave your video in the step above.
 - In step 4 of the process, copy everything under the Embed heading (starting with <iframe... )
 - Paste this where you want it to display on your site.
 
-After {% raw %} <iframe {% endraw %} add the following: {% raw %} class='timeline-iframe' {% endraw %}.
+After  ```<iframe``` add the following: ```class='timeline-iframe'```.
 
 Your final code should look exactly like this (except the "src" URL will be different):
 
