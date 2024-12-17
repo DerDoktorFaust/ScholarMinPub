@@ -1,6 +1,6 @@
 # ScholarMinPub
 
-Home of ScholarMinPub.
+ScholarMinPub is a minimalist computing platform for scholars and students to digitally publish to the world their research. It has no monetary costs as it is entirely based on the free platform GitHub. The computing requirements are very low: an internet-connected device (almost any computer of any age will work, along with most tablets and smartphones). The digital literacy requirements are also very low and the author needs only the information contained down below to get set up and running. ScholarMinPub supports the needs of online digital humanities projects through providing an easy-to-use platform with no-coding (just MarkDown!) to publish text, images, and videos with an eye to aesthetic design and the proliferation of knowledge globally.
 
 ## Origins of ScholarMinPub
 
@@ -10,12 +10,12 @@ ScholarMinPub is developed by Christopher Thomas Goodwin, a historian of Germany
 
 ## Establish a Repository with Your Copy of ScholarMinPub In It
 
-The first thing you’ll need to do—to build your website—is to create a copy of our ScholarMinPub template that you can alter to suit your needs and put into something GitHub calls ‘a repository.’ A repository is just a collection of files within a larger project (in this case ScholarMinPub). So in this step you will create a clone copy of the ScholarMinPub files, within a repository you will name as your own.  To create the site, you’ll then be revising these files to reflect your content (adding all the elements of your edition: the source, your commentary, footnotes, etc.) You will revise these files to make your website.  To create your Repository, with your new copy of the ScholarMinPub template in it:
+The first thing you’ll need to do—to build your website—is to create a copy of our ScholarMinPub template that you can alter to suit your needs and put into something GitHub calls ‘a repository.’ A repository is just a collection of files within a larger project (in this case ScholarMinPub). So in this step you will create a clone copy of the ScholarMinPub files, within a repository you will name as your own.  To create the site, you’ll then be revising these files to reflect your content (adding all the elements of your edition: digital sources, your commentary, footnotes, etc.) You will revise these files to make your website.  To create your Repository, with your new copy of the ScholarMinPub template in it:
 
 - ***Sign in to GitHub*** - If you don’t already have an account, create one. Go to [GitHub](https://github.com) and select “sign up” at the top right corner.
 - ***Go to the ScholarMinPub Repository*** - This is where you will find all the ScholarMinPub files: [ScholarMinPub GitHub Repository](https://github.com/DerDoktorFaust/ScholarMinPub).
 - ***Create Your Own Repository*** - Click on the big green button on the top right of the screen ("Use this Template") It will provide you with two options. Choose ”Create a New Repository.”
-- ***Choose a Name for your Brand New ScholarMinPub Project*** - This should be LASTNAME-FIRSTNAME-HIST-CLASSNUMBER
+- ***Choose a Name for your Brand New ScholarMinPub Project*** - Remember this name
 - ***Set the Preferences*** - The default setting is public repository. Do not change this, as you can only deploy a website if the repository is public.
 - ***Click Create Repository***
 
@@ -29,13 +29,13 @@ So your new copy of ScholarMinPub already can be converted into a website, using
 - ***Copy and Store Your New URL So You Have It Handy*** - Copy the link, then click on the ‘Code’ page (top left).  Find the ‘About’ section (on the right). Click on the Settings button, which is just to the right of “About” and looks like a gear. Then paste the URL (the website’s address) in the “Website” line to always have it at hand.  
 - ***Set Your Site baseurl***
     - Set your Config.yml File - You can find the “config.yml” folder under the “Code” button at the top left hand of the screen. The “config.yml” folder is near the bottom of the page.
-    - Replace the content of the line "baseurl" in the config.yml folder with the name of your repository, which is the name you selected when you initially created your own repository.  Be sure to copy the name exactly (e.g., 'baseurl: "/ScholarMinPub"' --> 'baseurl: "LASTNAME-FIRSTNAME-HIST-CLASSNUMBER"').
+    - Replace the content of the line "baseurl" in the config.yml folder with the name of your repository, which is the name you selected when you initially created your own repository.  Be sure to copy the name exactly (e.g., 'baseurl: "/ScholarMinPub"' --> 'baseurl: "TheNameYouChoseAbove"'). _Note: these single and double quotation marks are required._
     - Change the title of your project
-    - Add your group members' names
+    - Add your authors' names
 - ***Click on the Link You Created in the Step Above*** - Your website should now load.
 
 > [!WARNING] 
-> Do not move files around in your directory structure. Do not alter ANY existing files except the _one_ time you change _config.yml and the numbered files where you put your content (i.e. files beginning with 001... 007).
+> If you do not have experience working with GitHub, Jekyll, and web design, do not move files around in your directory structure. Do not alter ANY existing files except the _one_ time you change _config.yml and the numbered files where you put your content (i.e. files beginning with 001... 007).
 
 ## Adding Content
 
@@ -71,7 +71,7 @@ To add an image you found on the internet, you first need to download the image 
 - Navigate to the directory ```/media_files/_media_metadata```
 - Press the Add File button at the top left
 - Select "Create New File"
-- Name your file a descriptive name that makes sense based on the image
+- Name your file a descriptive name that makes sense based on the image and ensure you end this name with ```.md```. For the example below, this would be: ```emperornapoleonimage.md```.
 
 Copy and paste the following:
 
@@ -93,7 +93,10 @@ layout: media_description
 ```
 
 
-Change the information above to match your new image. Remember the "name" you give it above.
+Change the information above to match your new image. Remember the "name" you give it above. 
+
+> [!WARNING] 
+> This name should not contain special characters such as a colon or spaces between words. There should not be a colon anywhere in these files except where they already appear (for example, _title:, name:, etc.).
 
 
 #### Add the Image to One of your Pages
@@ -135,7 +138,7 @@ https://www.youtube.com/embed/PizUbOsjYm0?si=SukZvyQDpYvHldiR
 - Navigate to the directory /media_files/_media_metadata
 - Press the Add File button at the top left
 - Select "Create New File"
-- Name your file a descriptive name that makes sense based on the image
+- Name your file a descriptive name that makes sense based on the image and ensure you end this name with ```.md```. For the example below, this would be: ```riseofprussiavideo.md```.
 
 Copy and paste the following:
 
@@ -158,7 +161,10 @@ layout: media_description
 ```
 
 
-Change the information above to match your new video. Remember the "name" you give it above.
+Change the information above to match your new video. Remember the "name" you give it above. 
+
+> [!WARNING] 
+> This name should not contain special characters such as a colon or spaces between words. There should not be a colon anywhere in these files except where they already appear (for example, _title:, name:, etc.).
 
 #### Add the Video to One of your Pages
 
@@ -184,3 +190,13 @@ Your final code should look exactly like this (except the "src" URL will be diff
 ```
 <iframe class='timeline-iframe' src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12ZNkEbnN4RnsWLrW2Ekpz2cQV_2QA-3WgJTP4WUKduk&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
 ```
+
+### Changing the Title Page Background Image
+
+- Find a suitable replacement on the internet
+- - Convert the new image to .jpg (jpeg) if it is not already in that format
+- Go to ```media_files/images``` and rename mainpageimage.jpg to mainpageimage2.jpg (so that you will not lose the image if anything goes awry)
+- Upload your new file to that same directory
+- Rename your new file ```mainpageimage.jpg```
+
+_Note: Advanced users can go into the file ```home.html``` and change the background image to a filename of their choice. This is particularly useful if the new background image is not in .jpg format and conversion is not desirable.
